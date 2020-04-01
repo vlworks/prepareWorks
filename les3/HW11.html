@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW 11</title>
+</head>
+<body>
+
+    <div class="container">
+        <h4>Игра угадай число</h4>
+
+        <input class="number" type="number" style="display: none">
+
+        <p class="message" style="display: none"></p>
+
+        <button class="btn">Новая игра</button>
+    </div>
+
+    <script>
+
+        let num = null;
+        const $number = document.querySelector('.number');
+        const $message = document.querySelector('.message');
+        const $btn = document.querySelector('.btn');
+
+
+        $btn.addEventListener('click', (elem) => {
+            if (elem.target.textContent === 'Новая игра'){
+                $number.value = '';
+                num = Math.floor(Math.random() * 100);
+                $message.textContent = 'Я загадал число, попробуй угадать';
+                $message.style.display = "block";
+                $number.style.display = "block";
+                $btn.textContent = 'Угадать';
+            } else {
+                if (+$number.value === num){
+                    $message.textContent = 'Вы угадали!';
+                    $btn.textContent = 'Новая игра';
+                } else if (+$number.value < num) {
+                    $message.textContent = 'Мало';
+                } else {
+                    $message.textContent = 'Много';
+                }
+            }
+        });
+
+
+    </script>
+
+</body>
+</html>

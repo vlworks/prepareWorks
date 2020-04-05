@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW 10</title>
+</head>
+<body>
+<script>
+    const minuteDeg = 6;
+    const hoursDeg = 30;
+
+    function clockDegree(time) {
+        let arr = time.split(':');
+        if ((arr[0] > 24 || arr[0] < 0) || (arr[1] > 60 || arr[1] < 0)){
+            return 'Check your time!';
+        }
+        if (+arr[0] === 24 && arr[1] > 0) {
+            return 'Check your time!';
+        }
+        if (arr[0] > 12) {
+            arr[0] = arr[0] - 12;
+        }
+
+        return arr[0] * hoursDeg + ":" + arr[1] * minuteDeg;
+    }
+
+    console.log(clockDegree('15:45'));
+</script>
+</body>
+</html>

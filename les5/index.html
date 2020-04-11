@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HomeWork</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    td {
+      width: 50px;
+      height: 25px;
+      border: 1px solid black;
+    }
+    img {
+      border: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    .block {
+      width: 50px;
+      height: 25px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+<!--1 Task-->
+<section>
+  <h2>1. Что такое ol, ul и li?</h2>
+  <p>ol - нумерованный список, li - его элементы</p>
+
+  <ol>
+    <li>элемент</li>
+    <li>элемент2</li>
+    <li>элемент3</li>
+  </ol>
+
+  <p>ul - маркированный список, li - его элементы</p>
+
+  <ul>
+    <li>элемент</li>
+    <li>элемент2</li>
+    <li>элемент3s</li>
+  </ul>
+  <hr>
+</section>
+<!--2 Task-->
+<section>
+  <h2>2. Сверстать сложную таблицу с объединением строк и столбцов.</h2>
+  <table>
+    <tbody>
+      <tr>
+        <td></td>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td rowspan="2"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+</section>
+<!--Task 3-->
+<section>
+  <h2>3. В каком регистре лучше писать HTML-код?</h2>
+  <p>В нижнем регистре</p>
+  <hr>
+</section>
+<!--Task 4-->
+<section>
+  <h2>4. Как убрать синюю рамку вокруг картинки-ссылки?</h2>
+  <p>Используем border: none для этой картинки</p>
+  <hr>
+</section>
+<!--Task 5-->
+<section>
+  <h2>5. Обязательно ли писать alt в img?</h2>
+  <p>Можно сказать обязательно, это улучшает работу поискового робота и избавляет от предупреждений валидаторов.</p>
+  <hr>
+</section>
+<!--Task 6-->
+<section>
+  <h2>6. Что такое html-entities?</h2>
+  <p>Это спец символы отсутствующие на клавиатуре. Типа &copy; (copy), &reg; (reg)</p>
+  <hr>
+</section>
+<!--Task 7-->
+<section>
+  <h2>7. Как убрать подчеркивание для всех ссылок на странице?</h2>
+  <p>a { text-decoration: none}</p>
+  <hr>
+</section>
+<!--Task 8-->
+<section>
+  <h2>8. Что делает свойство clear?</h2>
+  <p>Отменяет обтекание элементов, если ранее было задано</p>
+  <hr>
+</section>
+<!--Task 9-->
+<section>
+  <h2>9. Есть ячейка таблицы, в ней 3 дива, в каждом диве – по слову. На первый див применен стиль float: left; на третий – float: right. Что нужно применить на второй див, чтобы все три надписи/дивы были в одной горизонтальной строке, то есть первый имел бы выравнивание по левому краю, третий – по правому, а второй – по центру?</h2>
+  <p></p>
+  <table>
+    <tbody>
+    <tr>
+      <td>
+        <div class="block" style="float: left">Слово1</div>
+        <div class="block" style="clear: inherit">Слово2</div>
+        <div class="block" style="float: right">Слово3</div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <hr>
+</section>
+<!--Task 10-->
+<section>
+  <h2>10. Перечислить по пять знакомых вам псевдоклассов и псевдостилей с указанием их функционала.</h2>
+  <p>:checked - псевдокласс для input типов radio, checkbox; :focus - выбранный input; :hover - при наведении на элемент; :active - для активной ссылки, при нажатии; :first-child - первый дочерний элемент</p>
+  <hr>
+</section>
+</body>
+</html>
